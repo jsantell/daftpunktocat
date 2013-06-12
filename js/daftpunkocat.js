@@ -41,29 +41,12 @@
 
   function draw () {
     ctx.clearRect(0, 0, w, h);
-    beatCheck(fft[10]);
     for (var i = 0; i < 512;) {
       drawFreq(fft[i], i / 22);
       i += 22;
     }
   }
   
-  var DECAY_RATE = 0.25;
-  var MOD = 10;
-  var threshold = 220;
-  var last = 0;
-
-  var count = 0;
-  var map = ['#ff0077', '#aaee22'];
-  function beatCheck (val) {
-    last -= DECAY_RATE;
-    if (val > threshold && val > last) {
-      last = val + MOD;
-      document.getElementsByTagName('body')[0].style.backgroundColor = map[++count%2];
-      canvas.style.backgroundColor = map[count%2];
-    }
-  }
-
   function drawFreq (value, pos) {
     var ovalCount = ~~(value / 12);
     var displacement = Math.abs(pos - 12) * 2;
