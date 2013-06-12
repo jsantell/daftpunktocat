@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>Daftpunkocat</title>
+        <link rel="stylesheet" href="css/styles.css" />
+    </head>
+    <body>
+        <div id="container">
+            <div id="info">
+                <div id="credits">
+                    <span>music by <a href="http://www.daftpunk.com/">daft punk</a></span>
+                    <span>daftpunkocat by <a href="https://github.com/jeejkang">james kang</a></span>
+                    <span>web audio'd by <a href="http://twitter.com/jsantell">jordan santell</a></span>
+                </div>
+                <div id="links">
+                    <span><a href="https://github.com/jsantell/daftpunkocat">code</a></span>
+                    <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://jsantell.com/daftpunkocat" data-text="hope you like daft punk, octocat and web audio api" data-via="jsantell">Tweet</a>
+                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                </div>
+
+            </div>
+            <canvas id="canvas"></canvas>
+            <div id="image"></div>
+            <div id="loading">
+                <div id="loading-image"></div>
+            </div>
+            <div id="not-supported">
+                <span>Your browser does not currently support the Web Audio API. Please try <a href="http://www.mozilla.org/en-US/firefox/aurora/">Firefox Aurora</a> (enable flags), <a href="https://www.google.com/chrome">Google Chrome</a>, or <a href="http://www.apple.com/safari/">Safari</a>.</span>
+                <div id="logos">
+                    <a href="http://www.mozilla.org/en-US/firefox/aurora/"><img src="images/firefox-512.png" /></a>
+                    <a href="http://www.google.com/chrome"><img src="images/chrome-512.png" /></a>
+                    <a href="http://www.apple.com/safari/"><img src="images/safari-512.png" /></a>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/allen.js"></script>
+        <script src="js/daftpunkocat.js"></script>
+    </body>
+</html>
