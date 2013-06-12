@@ -25,7 +25,7 @@
 
   allen.getBuffer(FILE, function (xhr) {
     bufferNode.buffer = audioContext.createBuffer(xhr.target.response, false);
-    bufferNode.start(0);
+    bufferNode[bufferNode.start ? 'start' : 'noteOn'](0);
     init();
   });
 
