@@ -3,6 +3,7 @@
   if (!allen.getAudioContext()) {
     document.getElementById('loading').style.display = 'none';
     document.getElementById('not-supported').style.display = 'block';
+    return;
   }
 
   // Drawing
